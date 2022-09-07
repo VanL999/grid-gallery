@@ -11,7 +11,7 @@ h1 {
   text-align: center;
 }
 
-.main-header {
+.gallery-header {
   margin: 2rem auto;
   padding: 1rem auto;
   color: white;
@@ -22,7 +22,7 @@ h1 {
   letter-spacing: 1px;
 }
 
-.main-header:hover {
+.gallery-header:hover {
   width: 100%;
   letter-spacing: 4px;
 }
