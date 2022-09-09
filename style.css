@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,8 @@
 }
 
 html {
+  font-size: 14px;
+  font-family: 'Noto Sans Buhid', sans-serif;
 }
 
 h1 {
@@ -13,13 +16,21 @@ h1 {
 
 .gallery-header {
   margin: 2rem auto;
-  padding: 1rem auto;
+  padding: 1rem 2rem;
   color: white;
   background-color: gray;
   border-radius: 5px;
   width: 90%;
   transition: 0.5s;
   letter-spacing: 1px;
+}
+
+.gallery-description {
+  text-align: center;
+  width: 75%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+
 }
 
 .gallery-header:hover {
@@ -55,7 +66,7 @@ h1 {
   transition: 0.5s;
 }
 
-.gallery-element:hover::after{
+.gallery-element:hover::after {
   top: 0;
 }
 
@@ -68,7 +79,7 @@ h1 {
   transition: 1.5s;
 }
 
-.gallery-element:hover .gallery-img{
+.gallery-element:hover .gallery-img {
   transform: scale(1.2);
   color: rgba(0, 0, 0, 0.5);
 }
@@ -84,7 +95,7 @@ h1 {
   transition: 0.5s;
 }
 
-.gallery-element:hover .gallery-text{
+.gallery-element:hover .gallery-text {
   top: 50%;
   opacity: 1;
   color: rgb(255, 255, 255);
