@@ -12,79 +12,108 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <h1 class="gallery-header">grid-gellery</h1>
-    <p class="gallery-description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut, sunt
-      maiores totam pariatur, perspiciatis aperiam excepturi, modi autem non
-      mollitia error sint neque molestias nam delectus soluta unde possimus?
-    </p>
-    <div class="gallery-container">
-      <div class="gallery-element w-5 h-2">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?arts-culture"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">culture</h2>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="header-logo">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Hoome</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Slider</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+          </ul>
+        </nav>
+        <button class="burger ">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </button>
       </div>
-      <div class="gallery-element w-3 h-2">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?people"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">people</h2>
+    </header>
+
+    <!----------------------------------------------------------------------->
+
+    <main class="gallery">
+      <div class="container gallery-container">
+        <h1 class="gallery-header">grid-gellery</h1>
+        <p class="gallery-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut,
+          sunt maiores totam pariatur, perspiciatis aperiam excepturi, modi
+          autem non mollitia error sint neque molestias nam delectus soluta unde
+          possimus?
+        </p>
+        <div class="gallery-images">
+          <div class="gallery-element w-5 h-2">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?arts-culture"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">culture</h2>
+          </div>
+          <div class="gallery-element w-3 h-2">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?people"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">people</h2>
+          </div>
+          <div class="gallery-element w-4 h-2">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?film"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">film</h2>
+          </div>
+          <div class="gallery-element w-2 h-2">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?nature"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">nature</h2>
+          </div>
+          <div class="gallery-element w-2 h-3">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?wallpapers"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">wallpapers</h2>
+          </div>
+          <div class="gallery-element w-2 h-3">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?architecture"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">architecture</h2>
+          </div>
+          <div class="gallery-element w-4 h-3">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?travel"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">travel</h2>
+          </div>
+          <div class="gallery-element w-2 h-2">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?animals"
+              alt="random image"
+              class="gallery-img"
+            />
+            <h2 class="gallery-text">animals</h2>
+          </div>
+        </div>
       </div>
-      <div class="gallery-element w-4 h-2">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?film"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">film</h2>
-      </div>
-      <div class="gallery-element w-2 h-2">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?nature"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">nature</h2>
-      </div>
-      <div class="gallery-element w-2 h-3">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?wallpapers"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">wallpapers</h2>
-      </div>
-      <div class="gallery-element w-2 h-3">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?architecture"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">architecture</h2>
-      </div>
-      <div class="gallery-element w-4 h-3">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?travel"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">travel</h2>
-      </div>
-      <div class="gallery-element w-2 h-2">
-        <img
-          src="https://source.unsplash.com/random/1920x1080/?animals"
-          alt="random image"
-          class="gallery-img"
-        />
-        <h2 class="gallery-text">animals</h2>
-      </div>
-    </div>
+    </main>
   </body>
 </html>

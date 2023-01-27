@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +6,146 @@
 
 html {
   font-size: 14px;
-  font-family: 'Noto Sans Buhid', sans-serif;
+  font-family: "Noto Sans Buhid", sans-serif;
 }
 
 h1 {
   text-align: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+}
+
+.header-logo {
+  display: block;
+  width: 86px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.burger {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  display: none;
+}
+
+.burger__line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.burger__line:nth-child(1) {
+  top: 0;
+}
+
+.burger__line:nth-child(2) {
+  transform: translateY(-50%);
+}
+
+.burger__line:nth-child(3) {
+  bottom: 0;
+}
+
+.burger.active .burger__line:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .burger__line:nth-child(3) {
+  bottom: 50%;
+  transform: rotate(-45deg) translateY(50%);
+}
+
+@media (max-width:650px){
+  .burger{
+    display: block;
+    position: relative;
+  }
+  .header-nav{
+    position: fixed;
+    inset: 0 0 0 50%;
+    transform: translateY(-100%);
+    background-color: rgb(31, 34, 61);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.2s;
+  }
+  .nav-list{
+   flex-direction: column;
+  }
+  .header-nav.active{
+    transform: translateY(0);
+    
+  }
+}
+
+/* ========================================================================================== */
+
+ .gallery{
+padding-top: 8rem;
+ }
+
+ .gallery-container {
+  max-width: 1200px;
+}
+
 .gallery-header {
-  margin: 2rem auto;
+  margin-inline: auto;
+  margin-bottom: 2rem;
   padding: 1rem 2rem;
   color: white;
   background-color: gray;
@@ -23,6 +153,7 @@ h1 {
   width: 90%;
   transition: 0.5s;
   letter-spacing: 1px;
+
 }
 
 .gallery-description {
@@ -30,7 +161,6 @@ h1 {
   width: 75%;
   margin: 2rem auto;
   font-size: 1.5rem;
-
 }
 
 .gallery-header:hover {
@@ -38,9 +168,8 @@ h1 {
   letter-spacing: 4px;
 }
 
-.gallery-container {
+.gallery-images {
   justify-content: center;
-  padding: 0.5rem;
   display: grid;
   gap: 5px;
   grid-auto-rows: 200px;
