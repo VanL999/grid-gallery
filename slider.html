@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    
+
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="header-logo">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Hoome</a>
+            </li>
+            <li class="nav-item">
+              <a href="./gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="./slider.html" class="nav-link">Slider</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+          </ul>
+        </nav>
+        <button class="burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random/1" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random/2" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random/3" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random/4" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://source.unsplash.com/random/1920x1080/?random/5" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+  ></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
