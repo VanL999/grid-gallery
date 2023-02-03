@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/gallery.css"/>
+    <link rel="stylesheet" href="./css/gallery.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
@@ -23,13 +23,19 @@
         </a>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Hoome</a></li>
-            <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="./slider.html" class="nav-link">Slider</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Hoome</a>
+            </li>
+            <li class="nav-item">
+              <a href="./gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="./slider.html" class="nav-link">Slider</a>
+            </li>
             <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
           </ul>
         </nav>
-        <button class="burger ">
+        <button class="burger">
           <div class="burger__line"></div>
           <div class="burger__line"></div>
           <div class="burger__line"></div>
@@ -48,8 +54,14 @@
           autem non mollitia error sint neque molestias nam delectus soluta unde
           possimus?
         </p>
+        <form action="" class="gallery__search">
+          <input class="search__input" type="text" />
+          <button class="search__btn" type="submit">
+            <ion-icon class="search__icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
         <div class="gallery-images">
-          <div class="gallery-element w-5 h-2">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?arts-culture"
               alt="random image"
@@ -57,7 +69,7 @@
             />
             <h2 class="gallery-text">culture</h2>
           </div>
-          <div class="gallery-element w-3 h-2">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?people"
               alt="random image"
@@ -65,7 +77,7 @@
             />
             <h2 class="gallery-text">people</h2>
           </div>
-          <div class="gallery-element w-4 h-2">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?film"
               alt="random image"
@@ -73,7 +85,7 @@
             />
             <h2 class="gallery-text">film</h2>
           </div>
-          <div class="gallery-element w-2 h-2">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?nature"
               alt="random image"
@@ -81,7 +93,7 @@
             />
             <h2 class="gallery-text">nature</h2>
           </div>
-          <div class="gallery-element w-2 h-3">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?wallpapers"
               alt="random image"
@@ -89,7 +101,7 @@
             />
             <h2 class="gallery-text">wallpapers</h2>
           </div>
-          <div class="gallery-element w-2 h-3">
+          <div class="gallery-element ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?architecture"
               alt="random image"
@@ -97,7 +109,7 @@
             />
             <h2 class="gallery-text">architecture</h2>
           </div>
-          <div class="gallery-element w-4 h-3">
+          <div class="gallery-element  ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?travel"
               alt="random image"
@@ -105,16 +117,25 @@
             />
             <h2 class="gallery-text">travel</h2>
           </div>
-          <div class="gallery-element w-2 h-2">
+          <div class="gallery-element  ">
             <img
               src="https://source.unsplash.com/random/1920x1080/?animals"
               alt="random image"
               class="gallery-img"
             />
+            <!-- <a href="https://unsplash.com/t/animals" class="gallery-text">animals</a> -->
             <h2 class="gallery-text">animals</h2>
           </div>
         </div>
       </div>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
