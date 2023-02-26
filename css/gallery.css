@@ -38,17 +38,9 @@
   margin-bottom: 2rem;
   padding: 1rem 2rem;
   color: white;
-  background: #a80077; 
-  background: -webkit-linear-gradient(
-    to right,
-    #66ff00,
-    #a80077
-  ); 
-  background: linear-gradient(
-    to right,
-    #66ff00,
-    #a80077
-  ); 
+  background: #a80077;
+  background: -webkit-linear-gradient(to right, #66ff00, #a80077);
+  background: linear-gradient(to right, #66ff00, #a80077);
   border-radius: 5px;
   width: 90%;
   transition: 0.5s;
@@ -127,4 +119,36 @@
   top: 50%;
   opacity: 1;
   color: rgb(255, 255, 255);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-container {
+  max-width: 50rem;
+  margin: 50px 50px;
+  border: 5px solid white;
+  position: relative;
+}
+
+.modal-close {
+  font-size: 40px;
+  color: #a80077;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
 }

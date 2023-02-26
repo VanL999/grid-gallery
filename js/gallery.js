@@ -1,7 +1,9 @@
 const KEY = "awAHTVBcw3P4To9ERShgBkYZbOOtY3FFVN09N74N6jqWEgjKpVIBb1gO";
-
 const galleryImages = document.querySelector(".gallery-images");
 const form = document.querySelector(".gallery__search");
+
+let modal = document.querySelector(".modal");
+let modalClose = document.querySelector(".modal-close");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -42,8 +44,24 @@ function generateHTML(photos) {
   />
   <a href="${photo.photographer_url}" class="gallery-text" target="_blank">${photo.photographer}</a>
     `;
+    item.addEventListener("click", () => {
+      showModal(photo.src.medium);
+    });
     galleryImages.appendChild(item);
   });
 }
 
+modalClose.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+function showModal(src) {
+  modal.classList.add("active");
+  let img = modal.querySelector("img");
+  console.log(img);
+  img.src = src;
+}
+
 GetImg("curated?");
+
+console.log(modal);
